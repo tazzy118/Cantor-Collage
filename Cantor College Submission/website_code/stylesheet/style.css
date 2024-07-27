@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 249, 246);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 139, 18);
+    color:rgb(255, 255, 255);
+}
+
+.school-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.menu-btn {
+    position: absolute;
+    top: .75rem;
+    right: .5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.menu-btn .bar {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.dropdown  {
+    position: relative;
+    display: none; 
+}
+
+.navbar-links ul:hover .dropdown ul {
+    display: block;
+    position: absolute;
+    margin-right: -50px ;
+    background-color: rgb(236, 83, 12);
+    right: 10px;
+    top: calc(100% + .15rem);
+    padding: .75rem;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none; 
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem .5rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    #options .dropdown ul li{
+        flex-direction: column;
+        text-align: center; /*Not sure why it isnt making the whole dropmenu center*/
+        width: 100%;
+        padding: .5rem .5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+      }
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    border-top: 2px solid ;
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 0;
+}
+
+p {
+    font-size: 15px;
+    line-height:1.5;
+}
+
+button{
+    width:100%;
+    background:rgb(255, 123, 0);
+    color: white;
+    border:none;
+    padding: 15px;
+    font-size:20px;
+    border-radius: 30px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+.course-form{
+    max-width:350px;
+    margin:auto;
+    border-radius: 15px;
+    background: rgb(231, 139, 18);
+    padding:20px
+}
+
+input [type=submit] {
+    width: 100%;
+    background:rgb(231, 139, 18);
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin:8px 0;
+    border: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit] {
+    background:rgb(255, 255, 255)
+}
+ 
